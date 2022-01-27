@@ -5,8 +5,8 @@ This is a simple nodejs API. Made with express.js.
 ### Project Info
 
 ```
-Client-Side Repo  :
-Server-Side Repo  :
+Client-Side Repo  :https://github.com/Irfan-Mahmud-Maruf/bd-tourist-clientsite.git
+Server-Side Repo  :https://github.com/Irfan-Mahmud-Maruf/bd-tourist-server.git
 ```
 
 ```
