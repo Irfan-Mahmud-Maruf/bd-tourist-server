@@ -1,0 +1,20 @@
+{
+  "name": "bdtourist-api",
+  "version": "1.0.0",
+  "description": "bdtourist API Server.",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "chalk": "^3.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongodb": "^4.2.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "start-dev": "nodemon index.js"
+  },
+  "author": "Irfan Mahmud Maruf",
+  "license": "ISC"
+}
