@@ -172,6 +172,36 @@ app.get('/service/:id', async (req, res) => {
 	const data = await database(options)
 	res.send(data)
 })
+/**
+ * Insert reviews
+ */ 
+app.put('/reviews', async (req, res) => {	
+	const data = req.body
+	
+	const options = {
+		db: 'bdtourist',
+		table: 'reviews',
+		method: 'insertOne',
+		data: data
+	}	
+	const result = await database(options)
+	res.send(result)
+})
+
+// Get service with id
+app.get('/reviews', async (req, res) => {
+	
+	const options = {
+		db: 'bdtourist',
+		table: 'reviews',
+		method: 'find',
+		data: {
+			find: {}
+		}
+	}	
+	const data = await database(options)
+	res.send(data)
+})
 
 
 // Get FAQ
