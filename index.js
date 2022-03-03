@@ -252,6 +252,23 @@ app.get('/orders', async (req, res) => {
 	const data = await database(options)
 	res.send(data)
 })
+
+/**
+ * GET `/orders`
+ */ 
+ app.get('/orders/user', async (req, res) => {
+    // {guid: "v3FGYTtRH4PlWUtRfIglAgzUTRm1"}
+    const options = {
+        db: 'bdexploreer',
+        table: 'orders',
+        method: 'find',
+        data: {
+            find: { guid: req.query.guid }
+        }
+    }
+    const result = await database(options)
+    res.send(result)
+})
 /**
  * Insert Faq
  */ 
