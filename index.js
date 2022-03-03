@@ -259,7 +259,7 @@ app.get('/orders', async (req, res) => {
  app.get('/orders/user', async (req, res) => {
     // {guid: "v3FGYTtRH4PlWUtRfIglAgzUTRm1"}
     const options = {
-        db: 'bdexploreer',
+        db: 'bdtourist',
         table: 'orders',
         method: 'find',
         data: {
